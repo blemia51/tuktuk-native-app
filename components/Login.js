@@ -8,7 +8,7 @@ class Login extends React.Component {
     return (
       <View>
         <Text style={styles.title}>Connecte - toi ! </Text>
-        <View style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 100}}>
+        <View style={styles.logincontainer}>
           <View style={{width: '80%'}}>
           <Input label='Identifiant' placeholder=''/>
           <Input label='Mot de passe' placeholder='' secureTextEntry/>
@@ -27,6 +27,12 @@ class Login extends React.Component {
 }
 
 const styles = StyleSheet.create ({
+  logincontainer:{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: 100,
+  },
   textinput: {
     marginLeft: 5,
     marginRight: 5,

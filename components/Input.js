@@ -2,13 +2,21 @@ import React from 'react';
 import { TextInput, View, Text, StyleSheet } from 'react-native';
 
 const Input = ({label, placeholder, ...props}) => (
-  <View style={{display: 'flex', flexDirection: 'row', alignItems: 'center', width: '100%', justifyContent: 'center', marginTop: 12}}> 
+  <View style={styles.inputcontainer}> 
     <Text style={styles.label}>{label}</Text>
     <TextInput style={styles.Input} placeholder={placeholder} {...props} />
   </View>
 )
 
 const styles = StyleSheet.create({
+  inputcontainer:{
+    display: 'flex', 
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    width: '100%', 
+    justifyContent: 'center', 
+    marginTop: 12,
+  },
   Input: {
     width: '100%',
     paddingVertical: 9,
