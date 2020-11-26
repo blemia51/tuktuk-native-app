@@ -10,8 +10,8 @@ class Login extends React.Component {
         <Text style={styles.title}>Connecte - toi ! </Text>
         <View style={styles.logincontainer}>
           <View style={{width: '80%'}}>
-          <Input label='Identifiant' placeholder=''/>
-          <Input label='Mot de passe' placeholder='' secureTextEntry/>
+            <Input label='Identifiant' placeholder=''/>
+            <Input label='Mot de passe' placeholder='' secureTextEntry/>
           </View>
           <Button
             style={styles.button}
@@ -45,10 +45,10 @@ const styles = StyleSheet.create ({
     paddingLeft: 10,
   },
   title: {
-  textAlign: 'left',
-  fontSize: 24,
-  textTransform: 'uppercase',
-  marginLeft: 5,
+    textAlign: 'left',
+    fontSize: 24,
+    textTransform: 'uppercase',
+    marginLeft: 5,
   },
   container: {
     flex: 1,
